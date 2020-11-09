@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/hero-image.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logo h1 {
+    display: flex;
+    font-size: 150px;
+    letter-spacing: 3px;
+    writing-mode: vertical-lr;
+    color: rgba(255, 255, 255, 0.324);
+}
+
+/* Tour and dates */
+
+.concert-dates span {
+    display: flex;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.3em;
+    margin-left: 35px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.324);
+}
+
+.concert-dates h1 {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    margin-left: 35px;
+    padding: 40px 0 0 0;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.324);
+}
+
+/* Main Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    bottom: 60px;
+    background: rgba(255, 255, 255, 0.256);
+    color: rgba(0, 0, 0, 0.454);
+    flex-direction: column;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5), 0 0 0 100px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: appear 1.5s ease-out 1.5s forwards;
+}
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+.container h1 {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-style: 10em;
+    line-height: 5rem;
+    margin-top: -80px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* H1 span */
+.container h1 span {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 6px;
+}
+
+/* H2 span */
+.container h2 span {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(160, 104, 31);
+}
+
+.countdown {
+    display: flex;
+    margin-top: 10px;
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 150px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(218, 218, 218);
+    margin: -30 15px;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+}
+
+.container img {
+    width: 100%;
+}
+
+.buttons {
+    margin: 12px 0;
+}
+
+.buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.buttons button img {
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50% -50%);
+}
+
+.buttons button :active {
+    background-color: rgba(255, 255, 255, 0.564);
+}
+
+#play {
+    margin: 0 16px;
+}
+
+.level {
+    width: 80%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #e1e6ec38;
+    border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+    #logo h1 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 600px) {
+    .concert-dates span {
+        font-size: 0.8rem;
+    }
+}
+
+/* Background Image | Markus Spiske */
+/* Music | John Mayer  */

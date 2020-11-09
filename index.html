@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Concert Mockup Countdown</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="logo">
+            <h1>THE DOMS</h1>
+        </div>
+        <div class="concert-dates">
+            <h1 class="tour">Tour Dates</h1>
+            <span>Lahaina, HI | December 15, 2020</span>
+            <span>Honolulu, HI | December 16, 2020</span>
+            <span>Honolulu, HI | December 17, 2020</span>
+            <span>Santa Cruz, CA | December 20, 2020</span>
+        </div>
+        <div class="container">
+            <h1><span>Next Concert</span></h1>
+            <h2><span>December 15th</span></h2>
+            <div class="countdown">
+                <div id="days">
+                    <p class="caption">DAYS</p>
+                    <p class="box">00</p>
+                </div>
+                <div id="hours">
+                    <p class="caption">HRS</p>
+                    <p class="box">00</p>
+                </div>
+                <div id="minutes">
+                    <p class="caption">MINS</p>
+                    <p class="box">00</p>
+                </div>
+                <div id="seconds">
+                    <p class="caption">SECS</p>
+                    <p class="box">00</p>
+                </div>
+            </div>
+            <input id="range" class="level" type="range" value="0" min="0" />
+            <div class="buttons">
+                <button id="player"><img src="images/rewind.png" /></button>
+                <button id="play">
+                    <img id="play_img" src="images/play.png" />
+                </button>
+                <button id="next"><img src="images/forward.png" /></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
